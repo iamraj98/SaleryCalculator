@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --white-color: white;
+    --dark-gray-color: darkgray;
+    --text-color-dark: rgb(26, 25, 25);
+    --text-color-light: white;
+    --orange-color: rgb(247, 130, 130);
+}
+
+body {
+    /* overflow: hidden; */
+    color: var(--text-color-dark);
+    background-color: gray;
+    font-family: 'Poppins';
+}
+
+.container-fluid {
+    height: auto;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('/asset/img/—Pngtree—corporate\ culture\ employee\ style\ poster_1009456.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    padding: 0px;
+    margin: 0px;
+}
+
+#logo {
+    margin: 0px;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+#main-row {
+    margin-top: 20px;
+}
+
+
+#i-el
+{
+    color: rgb(245, 14, 14);
+}
+
+#i-cal,
+#i-y{
+    color : rgb(92, 80, 80)
+}
+#i-user,
+#i-eid{
+    color : rgb(173, 171, 172);
+}
+
+
+/* .row{
+    gap: 10px;
+} */
+
+#col1 {
+    padding-bottom: 30px;
+}
+
+#c1-heading {
+    font-weight: 600;
+}
+
+#c1-subhead {
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.name {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(15, 15, 15, 0.4);
+    border-radius: 10px;
+}
+
+.name label {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color-light);
+}
+
+.name .icon i {
+    font-size: 25px;
+}
+
+
+#ib {
+    color: green;
+}
+
+
+#empid,
+#empname{
+    text-transform: uppercase;
+}
+
+#i-salery {
+    color: rgb(18, 18, 95)
+}
+
+#month {
+    width: 100%;
+    border-radius: 10px;
+    height: 35px;
+    border: none;
+    text-align: center;
+}
+
+#month:focus {
+    border: none;
+    box-shadow: none;
+}
+
+#month option:focus {
+    border: none;
+    box-shadow: none;
+}
+
+#r-btn {
+
+    width: auto;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(27, 27, 27);
+    background-color: rgb(243, 238, 238);
+    padding: 10px 10px;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+    font-weight: 600;
+
+
+
+}
+
+#r-btn:hover {
+   
+    background-color: transparent;
+    color:white;
+    background-color: rgb(15, 15, 15, 0.4);
+}
+
+
+
+/* Col2 Result */
+#col2{
+    background-color: rgb(15, 15, 15, 0.4);
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+#r-heading{
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    text-decoration: underline;
+}
+#col2 h4{
+    padding-top: 5px;
+    width: 50%;
+    height: 35px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.25), 
+    -10px -10px 10px rgb(255,255,255,0.1),
+    inset 10px 10px 10px rgb(0,0,0,0.25),
+   inset -10px -10px 10px rgb(255,255,255,0.1);
+   overflow: hidden;
+}
+#dubole h4 {
+    width: auto;
+}
+#col2 h4 span{
+   
+    font-size: 20px;
+    color:rgb(233, 232, 232);
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+@media(max-width: 787px) {
+
+    /* #empname,
+    #empid,
+    #e-salery,
+    #e-tds,
+    #e-leave,
+    #month,
+    #e-year,
+    #e-bonus {
+        width: 50%;
+        margin: auto;
+    } */
+
+    #c1-heading,
+    #c1-subhead {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #col2 h4{
+        width:100%;
+
+}
+}
+
