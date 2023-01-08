@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+:root{
+    --text-color: #252525;
+
+}
+body{
+	margin:0;
+	padding:0;
+	font-family:"arial",heletica,sans-serif;
+	font-size:12px;
+    background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+	-webkit-animation: 10s linear 0s normal none infinite animate;
+	-moz-animation: 10s linear 0s normal none infinite animate;
+	-ms-animation: 10s linear 0s normal none infinite animate;
+	-o-animation: 10s linear 0s normal none infinite animate;
+	animation: 10s linear 0s normal none infinite animate;
+ 
+}
+ 
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+
+.container-fluid{
+    height: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+#main-box{
+
+    margin: auto;
+    padding: 10px;
+    margin-top: 180px;
+    border-radius: 10px;
+    background:linear-gradient(rgba(231, 229, 229, 0.8),rgba(236, 235, 235, 0.8)),url('../Img/shapelined-_JBKdviweXI-unsplash.jpg');
+    /* background: rgb(195, 222, 248); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:  -8px -8px 15px rgb(255,255,255,0.2),
+    8px 8px 15px rgb(0,0,0,0.1);
+    /* inset -5px -5px 5px rgb(255,255,255,0.2),
+     inset 5px 5px 5px rgb(0,0,0,0.1); */
+    
+     
+    
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+}
+.icons i {
+    
+    font-size: 60px;
+    color: rgb(70, 69, 69);
+    margin-top: -40px;
+    background-color: white;
+    width: 60px;
+    border-radius: 51%;
+    
+}
+
+.header h1{
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    font-weight: 600;
+    color: var(--text-color);
+    
+}
+#sub-btn{
+    font-weight: 600;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(27, 69, 207);
+    box-shadow:  -8px -8px 15px rgb(255,255,255,0.2),
+    8px 8px 15px rgb(0,0,0,0.1);
+    transition: all 0.2s ease-in;
+    color: white;
+}
+#sub-btn:hover{
+    box-shadow:  -8px -8px 15px rgb(255,255,255,0.2),
+    8px 8px 15px rgb(0,0,0,0.1),
+    inset -5px -5px 5px rgb(255,255,255,0.2),
+     inset 5px 5px 5px rgb(0,0,0,0.1);
+    border-radius: 20px;
+    font-weight: 600;
+    color: rgb(248, 245, 245);
+}
+.form{
+    padding: 30px;
+}
+.main-form{
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.main-form label{
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+    font-weight: 500;
+
+}
+.form-control:focus {
+    box-shadow: none;
+    border: none;
+}
+.main-form input{
+    display: block;
+    background-color: rgb(214, 212, 212);
+    box-shadow: -8px -8px 15px rgb(255,255,255,0.2),
+    8px 8px 15px rgb(0,0,0,0.1);
+    border: none;
+    transition: all 0.2s ease-in;
+    border: 2px solid transparent;
+    
+}
+.main-form.success input{
+    border-color: green;
+}
+.main-form.error input{
+    border-color: rgb(173, 50, 50);
+}
+.main-form input:hover{
+    background-color: rgb(214, 212, 212);
+    box-shadow:  -8px -8px 15px rgb(255,255,255,0.2),
+   8px 8px 15px rgb(0,0,0,0.1),
+   inset -5px -5px 5px rgb(255,255,255,0.2),
+    inset 5px 5px 5px rgb(0,0,0,0.1);
+}
+.main-form i{
+    font-size: 15px;
+}
+
+
+.main-form .err-icons{
+    visibility: hidden;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+.main-form .err-icons1{
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+}
+.main-form.success i.correct{
+    visibility: visible;
+    color: green;
+}
+.main-form.error i.wrong{
+    visibility: visible;
+    color: rgb(173, 50, 50);
+}
+.main-form small{
+    visibility: hidden;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 600;
+    bottom: 0;
+    left: 0;
+    
+}
+.main-form.error small{
+    visibility: visible;
+    color: rgb(173, 50, 50);
+}
+@media(min-width:980px){
+    #main-box{
+        margin-left: 40px;
+    
+    }
+}
+
+
+
+/* BG */

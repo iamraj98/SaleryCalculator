@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salery System</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <!-- JS Link -->
+    <script src="./asset/js/bootstrap.min.js"></script>
+    <script src="./asset/js/calculation.js"></script>
+    <script src="./asset/js/calculation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/fontawesome.min.js" integrity="sha512-nKvEIGRKw2OQCR34yLfnWnvrOBxidLG9aK+vzsBxCZ/9ZxgcS4FrYcN+auWUTkCitTVZAt82InDKJ7x+QtKu6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Font AWSM -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Nav Bar -->
+  
+    <!-- Nav BAr End -->
+    <!-- body Section  -->
+  <div class="container-fluid">
+    <nav class="navbar ">
+    
+        <a class="navbar-brand" href="#">
+          <img src="./asset/img/pngwing.com (1).png" alt="" id="logo">
+        </a>
+        <a href="./index.html" id="logout"><span id="logs">Logout</span></a>
+    </nav>
+    <div class="row" id="main-row">
+        <div class="col-12" id="col1">
+            <h1 id="c1-heading">Welcome Admin </h1>
+            <h3 id="c1-subhead">Calculate Emplyoee salery</h3>
+            <div class="row gy-2 justify-content-evenly">
+                <!-- name -->
+                <div class="col-lg-6">
+                    <div class="col-12">
+                       
+                        <div  class="name mb-3 " >
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-user" id="i-user"></i>
+                            </div>
+                                <label for="exampleInputEmail1" class="form-label">Emplyoee Name</label>
+                                <input type="text" class="form-control" id="empname" aria-describedby="emailHelp">
+                            
+                              
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Emp ID -->
+                <div class="col-lg-6">
+                    <div class="col-12">
+                       
+                        <div  class="name mb-3 " >
+                            <div class="icon">
+                                <i class="fa-regular fa-id-card" id="i-eid"></i>
+                            </div>
+                            <label for="exampleInputEmail1" class="form-label">Emplyoee ID</label>
+                            <input type="text" class="form-control" id="empid" >
+                        
+                          
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Second Row -->
+
+            <div class="row gy-2 justify-content-evenly">
+                <!-- Emply Salary -->
+                <div class="col-lg-4 col-6">
+                    <div class=" col-lg-12 col-sm-12">
+                        
+                        <div  class="name mb-3 " >
+                            <div class="icon ">
+                                <i class="fa-solid fa-indian-rupee-sign d-none  d-lg-block" id="i-salery"></i>
+                                            
+                            </div>
+                                <label for="exampleInputEmail1" class="form-label">Emplyoee Salery (Monthly)</label>
+                                <input type="text" class="form-control" id="e-salery">
+                            
+                              
+                        </div>
+                    </div>
+                </div>
+                <!-- Emp TDS -->
+                <div class="col-lg-4 col-6">
+                    
+                        <div  class="name mb-3 " >
+                            <div class=" col-lg-12 col-sm-12">
+                                <div class="icon">
+                                    <i class="fa fa-user d-none d-lg-block" id="i-tds"></i>
+                                    
+                                </div>
+                                <label for="exampleInputEmail1" class="form-label">Emplyoee TDS(in %)</label>
+                                <input type="text" class="form-control" id="e-tds">
+                            
+                              
+                        </div>
+                    </div>
+                </div>
+                <!-- Emp Leave -->
+                <div class="col-lg-4 col-6">
+                    <div class="col-lg-12 col-sm-12">
+                        <div  class="name mb-3 " >
+                            <div class="icon">
+                                <i class="fa-solid fa-person-walking-arrow-right d-none d-lg-block" id="i-el"></i> 
+                            </div>
+                                <label for="exampleInputEmail1" class="form-label">Emplyoee Leave</label>
+                                <input type="text" class="form-control" id="e-leave">
+                            
+                              
+                        </div>
+
+                    </div>
+                </div>
+
+            
+            <!--  3rd Row -->
+            <!-- < class="row gy-2 justify-content-evenly"> -->
+                <!-- Emply month -->
+                <div class="col-lg-4 col-6">
+                    <div class="col-lg-12 col-sm-12">
+                        
+                        <div  class="name mb-3 " >
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-days d-none d-lg-block" id="i-cal"></i>
+                            
+                            </div>
+                            
+                                <label for="exampleInputEmail1" class="form-label">Month</label> <br>
+                                <select id="month">
+                                    <option value="none">----</option>
+                                      <option value="January">January</option>
+                                      <option value="February">February</option>
+                                      <option value="March">March</option>
+                                      <option value="April">April</option>
+                                      <option value="May">May</option>
+                                      <option value="June">June</option>
+                                      <option value="July">July</option>
+                                      <option value="August">August</option>
+                                      <option value="September">September</option>
+                                      <option value="October">October</option>
+                                      <option value="November">November</option>
+                                      <option value="December">December</option>
+                                  </select>
+                              
+                        </div>
+                    </div>
+                </div>
+                <!-- Year -->
+                <div class="col-lg-4 col-6">
+                    <div class="col-lg-12 col-sm-12">
+                       
+                        <div  class="name mb-3 " >
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-xmark d-none d-lg-block" id="i-y"></i>
+                            </div>
+                                <label for="exampleInputEmail1" class="form-label">Year</label>
+                                <input type="text" class="form-control" id="e-year" required>
+                            
+                              
+                        </div>
+                    </div>
+                </div>
+                <!-- Emp Bomus -->
+                <div class="col-lg-4 col-6">
+                    <div class="col-lg-12 col-sm-12">
+                        
+                        <div  class="name mb-3 " >
+                            <div class="icon">
+                                <i class="fa-solid fa-money-bill-trend-up d-none d-lg-block " id="ib"></i>
+                                
+                            </div>
+                            
+                                <label for="exampleInputEmail1" class="form-label">Emplyoee Bonus</label>
+                                <input type="text" class="form-control" id="e-bonus">
+                            
+                              
+                        </div>
+
+                    </div>
+                </div>
+                
+
+            </div> 
+           <center><button class="btn" id="r-btn" onclick="getResult()"><span id="cal">Calculate</span></button></center>
+        </div>
+
+        <!-- Result Section  -->
+
+        <div class="col-12" id="col2">
+            <center><h1 id="r-heading">Result</h1></center>
+            <div class="row gy-2 justify-content-evenly">
+                <div class="col-lg-6 col-sm-6">
+                    <div  class="name mb-3 name1 " >
+                            <label for="exampleInputEmail1" class="form-label">Emplyoee Name</label>
+                            <h4><span id="r-ename">N/A</span></h4>
+                        
+                          
+                    </div>
+
+                </div>
+                <!-- Employee id result -->
+                <div class="col-lg-6 col-sm-6">
+                    <div  class="name mb-3 name1" >
+                            <label for="exampleInputEmail1" class="form-label">Emplyoee Id</label>
+                            <h4><span id="r-eid">N/A</span></h4>
+                        
+                          
+                    </div>
+
+                </div>
+                <!-- Employee id result end-->
+                <!-- Emp salery result -->
+                <div class="col-lg-4 col-6">
+                    <div  class="name mb-3 name1 " >
+                            <label for="exampleInputEmail1" class="form-label">Emplyoee Salery (Monthly)</label>
+                            <h4><span id="r-esalery">N/A</span></h4> 
+                          
+                    </div>
+
+                </div>
+                <!-- emp saltery result End -->
+                <!-- Emp TDS result -->
+                <div class="col-lg-4 col-6">
+                    <div  class="name mb-3 name1"  id="dubole" >
+                            <label for="exampleInputEmail1" class="form-label">Emplyoee TDS (%)</label>
+                            <div class="row g-3">
+                                <div class="col-lg-6">
+                                    <h4><span id="r-etds">%</span></h4>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h4><span id="r-value">N/A</span></h4>
+                                </div>
+                            </div>
+                            
+                        
+                          
+                    </div>
+
+                </div>
+                <!-- emp tds result end -->
+                <!-- emp leave result  -->
+                <div class="col-lg-4 col-6">
+                    <div  class="name mb-3 name1"  id="dubole">
+                            <label for="exampleInputEmail1" class="form-label">Emplyoee Leaves</label>
+                            <div class="row g-3">
+                                <div class="col-lg-6">
+                                    <h4><span id="r-leaves">N/A</span></h4>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h4><span id="r-rupee">N/A</span></h4>
+                                </div>
+                            </div>
+                            
+                            
+                    </div>
+                </div>
+                <!-- emp leave result end -->
+                <!-- emp month result -->
+                <div class="col-lg-4 col-6">
+                    <div  class="name mb-3 name1" id="dubole" >
+                            <label for="exampleInputEmail1" class="form-label">Date</label>
+                            <div class="row g-3">
+                                <div class="col-lg-6">
+                                    <h4><span id="r-month">N/A</span></h4>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h4><span id="r-year">N/A</span></h4>
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+                <!-- emp month resutl end -->
+                <!-- emp year result  -->
+                <div class="col-lg-4 col-6">
+                    <div  class="name mb-3 name1" >
+                            <label for="exampleInputEmail1" class="form-label">Year Salery</label>
+                            <h4><span id="r-yearly_salery">N/A</span></h4>
+                    </div>
+                </div>
+                <!-- emp year result end -->
+                <!-- emp bonus result -->
+                <div class="col-lg-4 col-6">
+                    <div  class="name mb-3 name1" >
+                            <label for="exampleInputEmail1" class="form-label">Emplyoee Bonus(+)</label>
+                            <h4><span id="r-bonus">N/A</span></h4>
+                    </div>
+                </div>
+                <!-- emp bonus result end -->
+                <!-- final pay result -->
+                <!-- emp year result  -->
+                <div class="col-lg-4 col-6">
+                    <div  class="name mb-3 name1" >
+                            <label for="exampleInputEmail1" class="form-label">Final Pay Salery</label>
+                            <h4><span id="r-final">N/A</span></h4>
+                    </div>
+                </div>
+                <!-- emp year result end -->
+                <!-- <div class="col-lg-4 col-6">
+                    <div  class="name mb-3 name1" >
+                            <label for="exampleInputEmail1" class="form-label">Perday</label>
+                            <h4><span id="perday">N/A</span></h4>
+                    </div>
+                </div> -->
+                <!-- final pay result end -->
+
+            </div>
+            <center><button class="btn" id="r-btn" onclick="window.print()"><span id="cal">print</span></button></center>
+
+
+        </div>
+    </div>
+
+  </div>
+            
+    <!-- Body Section End -->
+    
+    
+</body>
+</html>

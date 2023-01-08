@@ -123,7 +123,8 @@ body {
     box-shadow: none;
 }
 
-#r-btn {
+#r-btn,
+#logout {
 
     width: auto;
     position: relative;
@@ -141,7 +142,8 @@ body {
 
 }
 
-#r-btn:hover {
+#r-btn:hover,
+#logout:hover {
    
     background-color: transparent;
     color:white;
@@ -211,3 +213,22 @@ body {
 }
 }
 
+
+
+#logout{
+    
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 20px;
+    
+    transition: all 0.2s ease;
+    
+   
+
+}
+#logout:hover{
+    box-shadow: -8px -8px 15px rgb(255,255,255,0.2),
+    8px 8px 15px rgb(0,0,0,0.1),
+    inset -5px -5px 5px rgb(255,255,255,0.2),
+    inset 5px 5px 5px rgb(0,0,0,0.1);
+}
